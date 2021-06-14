@@ -1,0 +1,53 @@
+el.txt
+p510~
+
+
+el(Expression Language)표현식
+
+ - 사용목적 : 화면 출력을 하기 위한 방법
+ 	out.print(); <%= %> 방법들을 대신해서 사용하도록 생성된 방법
+ 	
+ - 문법 : 
+ 		 ${ 변수 / 연산식 }
+ 	  객체의 속성값
+ 		 ${ memberBean.name } -> 일반적으로 가장 많이쓰는 형태
+ 		 ${ memberBean['name'] }
+ 		 ${ memberBean["name"] }
+ 
+ 
+ - el표현식에서 사용할 수 있는 내장객체
+ 	p513~
+ 	
+ 	pageScope : page 영역의 값 
+ 	requestScope : request 영역 값 참조
+ 	sessionScope : session 영역 값 참조
+ 	applicationScope : application 영역 값 참조
+	=> JSP의 영역객체(jsp 내장객체)와 같이 사용가능 	
+ 
+ 	param : 파라미터의 값에 접근
+ 		request.getParameter("파라미터명");
+ 		=> ${param.파라미터명}
+ 	paramValues : 파라미터의 정보를 배열로 저장
+ 				  (동일한 이름으로 파라미터값이 여러개 전달시 사용)
+ 	=> 파라미터의 값을 참조가능한 객체
+ 	
+ 	header
+ 	headerValues
+ 	=> Header의 정보를 가져오는 객체
+ 	 (p25)
+ 	
+ 	cookie : 쿠키 객체에 접근 가능
+ 	initParam : 컨텍스트 정보 초기화(프로젝트 정보)
+ 	pageContext : pageContext 객체 참조시 사용
+ 	
+ 	
+
+
+
+
+
+
+
+
+
+
